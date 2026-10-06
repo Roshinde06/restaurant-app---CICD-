@@ -1,0 +1,17 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+    container_name: foodhub-backend
+    expose:
+      - "5000"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: foodhub-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
