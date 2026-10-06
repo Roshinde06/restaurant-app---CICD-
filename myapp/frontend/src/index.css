@@ -1,0 +1,13 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-width: 320px;
+}
+
+::selection {
+  background: #e85d04;
+  color: white;
+}
